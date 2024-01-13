@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled, { css } from 'styled-components';
-import { navLinks } from '@config';
+import { resumeLink, navLinks } from '@config';
 import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
 import { Menu } from '@components';
@@ -206,7 +206,11 @@ const Nav = ({ isHome }) => {
   );
 
   const ResumeLink = (
-    <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+    <a
+      className="resume-button"
+      href={`/${resumeLink}.pdf`}
+      target="_blank"
+      rel="noopener noreferrer">
       Resume
     </a>
   );
@@ -229,7 +233,6 @@ const Nav = ({ isHome }) => {
               </ol>
               <div>{ResumeLink}</div>
             </StyledLinks>
-
             <Menu />
           </>
         ) : (

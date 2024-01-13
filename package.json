@@ -1,11 +1,11 @@
 {
-  "name": "v4",
-  "description": "Personal Website V4",
+  "name": "sagarswamirao-portfolio",
+  "description": "Sagar Swami Rao Kulkarni-Portfolio",
   "version": "1.0.0",
-  "author": "Brittany Chiang <brittany.chiang@gmail.com>",
+  "author": "Sagar Swami Rao Kulkarni <sagarswamirao@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/v4"
+    "url": "https://github.com/sagarswamirao"
   },
   "keywords": [
     "gatsby"
@@ -50,7 +50,9 @@
     "gatsby-source-filesystem": "^3.4.0",
     "gatsby-transformer-remark": "^4.1.0",
     "gatsby-transformer-sharp": "^3.4.0",
+    "jquery": "^3.7.1",
     "lodash": "^4.17.19",
+    "nvm": "0.0.4",
     "prismjs": "^1.27.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",

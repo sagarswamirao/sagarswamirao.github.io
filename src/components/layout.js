@@ -54,9 +54,9 @@ const Layout = ({ children, location }) => {
         <ThemeProvider theme={theme}>
           <GlobalStyle />
 
-          <a className="skip-to-content" href="#content">
+          {/* <a className="skip-to-content" href="#content">
             Skip to Content
-          </a>
+          </a> */}
 
           {isLoading && isHome ? (
             <Loader finishLoading={() => setIsLoading(false)} />
