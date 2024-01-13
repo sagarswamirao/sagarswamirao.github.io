@@ -1,13 +1,14 @@
 const config = require('./src/config');
 
 module.exports = {
+  // pathPrefix: 'sagarswamirao.github.io',
   siteMetadata: {
     title: 'Sagar Swami Rao Kulkarni',
     description:
-      'Sagar Swami Rao Kulkarni is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
+      'Sagar Swami Rao Kulkarni is an AI FullStack Developer who specializes in building exceptional web applications and object detection models',
     siteUrl: 'https://sagarswamirao.github.io', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bchiang7',
+    twitterUsername: '@SagarSwamiRao',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
