@@ -21,7 +21,6 @@ export const onClientEntry = () => {
       lightColor = 'rgba(100, 255, 218, 0.2)',
       gradientSize = 100;
 
-    // Basic Demo
     $('#___gatsby')
       .mousemove(function(e) {
         x = e.pageX - this.offsetLeft;
