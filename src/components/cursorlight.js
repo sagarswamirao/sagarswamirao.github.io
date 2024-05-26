@@ -3,33 +3,69 @@
 /* eslint-disable prefer-template */
 /* eslint-disable one-var */
 /* eslint-disable prefer-const */
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const CursorLight = () => {
-  let originalBGplaypen = getComputedStyle(document.body).backgroundColor;
-  let x, y, xy;
+  const [originalBGplaypen, setOriginalBGplaypen] = useState('');
+  const [lightColor, setLightColor] = useState('rgba(100, 255, 218, 0.2)');
+  const [gradientSize, setGradientSize] = useState(100);
 
-  const handleMouseMove = e => {
-    x = e.pageX;
-    y = e.pageY;
-    xy = x + ' ' + y;
+  useEffect(() => {
+    setOriginalBGplaypen(
+      window.getComputedStyle(document.getElementById('___gatsby')).backgroundColor,
+    );
 
-    document.body.style.backgroundImage = `
-      radial-gradient(circle at ${xy}, rgba(100, 255, 218, 0.2) 0%, rgba(255, 255, 255, 0.0) 100%),
-      ${originalBGplaypen}`;
-  };
+    const handleMouseMove = e => {
+      const x = e.pageX - e.currentTarget.offsetLeft;
+      const y = e.pageY - e.currentTarget.offsetTop;
+      const xy = x + ' ' + y;
 
-  const handleMouseLeave = () => {
-    document.body.style.backgroundImage = originalBGplaypen;
-  };
+      const bgWebKit =
+        '-webkit-gradient(radial, ' +
+        xy +
+        ', 0, ' +
+        xy +
+        ', ' +
+        gradientSize +
+        ', from(' +
+        lightColor +
+        '), to(rgba(255,255,255,0.0))), ' +
+        originalBGplaypen;
+      const bgMoz =
+        '-moz-radial-gradient(' +
+        x +
+        'px ' +
+        y +
+        'px 45deg, circle, ' +
+        lightColor +
+        ' 0%, ' +
+        originalBGplaypen +
+        ' ' +
+        gradientSize +
+        'px)';
 
-  document.body.addEventListener('mousemove', handleMouseMove);
-  document.body.addEventListener('mouseleave', handleMouseLeave);
+      e.currentTarget.style.background = bgWebKit;
+      e.currentTarget.style.background = bgMoz;
+    };
 
-  return () => {
-    document.body.removeEventListener('mousemove', handleMouseMove);
-    document.body.removeEventListener('mouseleave', handleMouseLeave);
-  };
+    const handleMouseLeave = e => {
+      e.currentTarget.style.background = originalBGplaypen;
+    };
+
+    const gatsbyElement = document.getElementById('___gatsby');
+    if (gatsbyElement) {
+      gatsbyElement.addEventListener('mousemove', handleMouseMove);
+      gatsbyElement.addEventListener('mouseleave', handleMouseLeave);
+    }
+
+    return () => {
+      if (gatsbyElement) {
+        gatsbyElement.removeEventListener('mousemove', handleMouseMove);
+        gatsbyElement.removeEventListener('mouseleave', handleMouseLeave);
+      }
+    };
+  }, [originalBGplaypen, lightColor, gradientSize]);
+  return null;
 };
 
 export default CursorLight;

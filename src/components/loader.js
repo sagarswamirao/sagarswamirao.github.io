@@ -47,21 +47,21 @@ const Loader = ({ finishLoading }) => {
     loader
       .add({
         targets: '#logo path',
-        delay: 300,
-        duration: 1500,
+        delay: 150,
+        duration: 750,
         easing: 'easeInOutQuart',
         strokeDashoffset: [anime.setDashoffset, 0],
       })
       .add({
         targets: '#logo #S',
-        duration: 700,
+        duration: 350,
         easing: 'easeInOutQuart',
         opacity: 1,
       })
       .add({
         targets: '#logo',
-        delay: 500,
-        duration: 300,
+        delay: 250,
+        duration: 150,
         easing: 'easeInOutQuart',
         opacity: 0,
         scale: 0.1,
@@ -76,7 +76,7 @@ const Loader = ({ finishLoading }) => {
   };
 
   useEffect(() => {
-    const timeout = setTimeout(() => setIsMounted(true), 10);
+    const timeout = setTimeout(() => setIsMounted(true), 5);
     animate();
     return () => clearTimeout(timeout);
   }, []);

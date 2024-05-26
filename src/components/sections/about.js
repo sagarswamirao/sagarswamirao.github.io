@@ -5,6 +5,10 @@ import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
+const paragraphStyle = {
+  textAlign: 'justify',
+};
+
 const StyledAboutSection = styled.section`
   max-width: 900px;
 
@@ -129,8 +133,6 @@ const About = () => {
     'Java',
     'Python',
     'JavaScript',
-    'TypeScript',
-    'Angular',
     'React.js',
     'MySQL',
     'MongoDB',
@@ -143,77 +145,40 @@ const About = () => {
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
       <h2 className="numbered-heading">About Me</h2>
-
       <div className="inner">
         <StyledText>
           <div>
-            {/* <p>
-              Hey there! I'm Sagar Swami Rao Kulkarni - your AI Full-Stack Maestro, currently
-              delving into the realm of Computer Science at the University of Colorado, Boulder.
-              Back in India, I snagged the <span style={{ color: '#FFD700' }}>Gold Medal</span> in
-              Computer Science and Engineering at CMR University.
+            <p style={paragraphStyle}>
+              Hello! I'm Sagar Swami Rao Kulkarni, an AI Full-Stack Developer with a passion for
+              cutting-edge technology. Currently pursuing my Master's in Computer Science at the
+              University of Colorado, Boulder, I bring a solid foundation in Computer Science and
+              Engineering, along with the prestigious{' '}
+              <span style={{ color: '#FFD700' }}>Gold Medal</span> from CMR University in India.
             </p>
-
-            <p>
-              In the buzzing tech haven of Bangalore, at Quinnox, I led the charge on projects like
-              QInfinite and Martin Brower-Perfect Order. Imagine slashing compute time by 80% for
-              QInfinite's immersive AR-VR landscape and hitting a stellar 76% detection accuracy at
-              Martin Brower. P.S. I'm not just about code; I thrive as a team player setting
-              standards and ensuring projects run like clockwork. And yes, I've got the awards to
-              prove it - the 2022 On the Spot Award, the 2021 Pat on the Back Award, and a Zonal
-              Level title at the Azure Skynet Hackathon, proudly tucked in my cap.
+            <p style={paragraphStyle}>
+              My professional journey at Quinnox in Bangalore was exhilarating, where I worked on
+              groundbreaking projects like QInfinite and Martin Brower-Perfect Order. I optimized
+              APIs, reducing compute time by 80%, and achieved an impressive 76% detection accuracy
+              through innovative object detection models. I thrive in collaborative environments,
+              setting high standards and ensuring smooth project execution, as recognized by the
+              2022 On the Spot Award, 2021 Pat on the Back Award, and the Zonal Level title at the
+              Azure Skynet Hackathon.
             </p>
-
-            <p>
-              Beyond the lines of code, I'm on a perpetual quest for knowledge and innovation. Eager
-              to contribute, I'm on the hunt for thrilling projects. On a personal note, I'm not
-              just a tech enthusiast; I'm all about giving back. Whether it's learning new skills,
-              identifying cutting-edge tech, or actively participating in volunteering activities -
-              count me in!
+            <p style={paragraphStyle}>
+              Driven by innovation, I actively seek new challenges to push boundaries. From
+              exploring cutting-edge tech to participating in volunteering initiatives, I'm always
+              eager to contribute and create a positive impact. Beyond coding, I'm on a perpetual
+              quest for knowledge and personal growth, with a strong commitment to giving back to
+              the community.
             </p>
-
-            <p>
-              Ready to embark on a journey of collaboration, innovation, and positive impact? Let's
-              make it happen!
-            </p> */}
-            <p>
-              Hey there! I'm Sagar Swami Rao Kulkarni - your AI Full-Stack Maestro, currently
-              delving into the realm of Computer Science at the University of Colorado, Boulder.
-              Back in India, I snagged the <span style={{ color: '#FFD700' }}>Gold Medal</span> in
-              Computer Science and Engineering at CMR University.
+            <p style={paragraphStyle}>
+              Here are some of the technologies I've been working with recently:
             </p>
-
-            <p>
-              In the buzzing tech haven of Bangalore, at Quinnox, I led the charge on projects like
-              QInfinite and Martin Brower-Perfect Order. Imagine slashing compute time by 80% for
-              QInfinite's immersive AR-VR landscape and hitting a stellar 76% detection accuracy at
-              Martin Brower. P.S. I'm not just about code; I thrive as a team player setting
-              standards and ensuring projects run like clockwork. And yes, I've got the awards to
-              prove it - the 2022 On the Spot Award, the 2021 Pat on the Back Award, and a Zonal
-              Level title at the Azure Skynet Hackathon, proudly tucked in my cap. 🏆🌟
-            </p>
-
-            <p>
-              Beyond the lines of code, I'm on a perpetual quest for knowledge and innovation. Eager
-              to contribute, I'm on the hunt for thrilling projects. On a personal note, I'm not
-              just a tech enthusiast; I'm all about giving back. Whether it's learning new skills,
-              identifying cutting-edge tech, or actively participating in volunteering activities -
-              count me in! 🚀🔍
-            </p>
-
-            <p>
-              Ready to embark on a journey of collaboration, innovation, and positive impact? Let's
-              make it happen! 💡🤝
-            </p>
-
-            <p>Here are a few technologies I've been working with recently:</p>
           </div>
-
           <ul className="skills-list">
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
         </StyledText>
-
         <StyledPic>
           <div className="wrapper">
             <StaticImage

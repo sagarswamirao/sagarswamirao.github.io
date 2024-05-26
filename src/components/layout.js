@@ -14,7 +14,6 @@ const Layout = ({ children, location }) => {
   const isHome = location.pathname === '/';
   const [isLoading, setIsLoading] = useState(isHome);
 
-  // Sets target="_blank" rel="noopener noreferrer" on external links
   const handleExternalLinks = () => {
     const allLinks = Array.from(document.querySelectorAll('a'));
     if (allLinks.length > 0) {
@@ -28,23 +27,31 @@ const Layout = ({ children, location }) => {
   };
 
   useEffect(() => {
+    const loadContent = async () => {
+      // Preload any data or components here
+      await new Promise(resolve => setTimeout(resolve, 3000)); // Simulate data fetching
+
+      setIsLoading(false);
+    };
+
     if (isLoading) {
-      return;
+      loadContent();
     }
 
-    if (location.hash) {
-      const id = location.hash.substring(1); // location.hash without the '#'
-      setTimeout(() => {
-        const el = document.getElementById(id);
-        if (el) {
-          el.scrollIntoView();
-          el.focus();
-        }
-      }, 0);
+    if (!isLoading) {
+      if (location.hash) {
+        const id = location.hash.substring(1); // location.hash without the '#'
+        setTimeout(() => {
+          const el = document.getElementById(id);
+          if (el) {
+            el.scrollIntoView();
+            el.focus();
+          }
+        }, 0);
+      }
+      handleExternalLinks();
     }
-
-    handleExternalLinks();
-  }, [isLoading]);
+  }, [isLoading, location.hash]);
 
   return (
     <>
@@ -58,7 +65,7 @@ const Layout = ({ children, location }) => {
             Skip to Content
           </a> */}
 
-          {isLoading && isHome ? (
+          {isLoading ? (
             <Loader finishLoading={() => setIsLoading(false)} />
           ) : (
             <StyledContent>

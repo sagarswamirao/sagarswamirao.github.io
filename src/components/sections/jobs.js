@@ -47,6 +47,7 @@ const StyledTabList = styled.div`
   }
 
   li {
+    // text-align: justify;
     &:first-of-type {
       @media (max-width: 600px) {
         margin-left: 50px;
@@ -143,6 +144,10 @@ const StyledTabPanel = styled.div`
 
   ul {
     ${({ theme }) => theme.mixins.fancyList};
+
+    li {
+      text-align: justify;
+    }
   }
 
   h3 {

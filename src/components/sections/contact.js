@@ -55,17 +55,14 @@ const Contact = () => {
 
   return (
     <StyledContactSection id="contact" ref={revealContainer}>
-      <h2 className="numbered-heading overline">What’s Next?</h2>
-
+      <h2 className="numbered-heading overline">What's Next?</h2>
       <h2 className="title">Get In Touch</h2>
-
       <p>
-        I am actively looking for summer 2024 internships. If you believe that my background is a
-        good fit for your organization's needs, please reach out to me at{' '}
-        <a href="mailto: sagarswamirao@gmail.com">sagarswamirao@gmail.com</a>. Whether you have a
+        I am actively seeking full-time opportunities starting from May 2025. If you believe that my
+        background is a good fit for your organization's needs, please reach out to me at{' '}
+        <a href="mailto:sagarswamirao@gmail.com">sagarswamirao@gmail.com</a>. Whether you have a
         question or just want to say hi, my inbox is always open.
       </p>
-
       <a className="email-link" href={`mailto:${email}`}>
         Say Hello
       </a>
