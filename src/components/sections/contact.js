@@ -42,6 +42,9 @@ const StyledContactSection = styled.section`
 `;
 
 const Contact = () => {
+  const paragraphStyle = {
+    textAlign: 'justify',
+  };
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
@@ -57,7 +60,7 @@ const Contact = () => {
     <StyledContactSection id="contact" ref={revealContainer}>
       <h2 className="numbered-heading overline">What's Next?</h2>
       <h2 className="title">Get In Touch</h2>
-      <p>
+      <p style={paragraphStyle}>
         I am actively seeking full-time opportunities starting from May 2025. If you believe that my
         background is a good fit for your organization's needs, please reach out to me at{' '}
         <a href="mailto:sagarswamirao@gmail.com">sagarswamirao@gmail.com</a>. Whether you have a
