@@ -82,7 +82,7 @@ const cloudyFloating = keyframes`
 const StyledPic = styled.div`
   position: relative;
   max-width: 300px;
-
+  padding-top: 100px;
   @media (max-width: 768px) {
     margin: 50px auto 0;
     width: 70%;
