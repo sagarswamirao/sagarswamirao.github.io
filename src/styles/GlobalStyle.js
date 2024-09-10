@@ -3,11 +3,13 @@ import fonts from './fonts';
 import variables from './variables';
 import TransitionStyles from './TransitionStyles';
 import PrismStyles from './PrismStyles';
-
+import VennDiagramStyles from './VennDiagramStyles';
 const GlobalStyle = createGlobalStyle`
   ${fonts};
   ${variables};
-
+  .hidden {
+    display: 'hidden';
+  }
   html {
     box-sizing: border-box;
     width: 100%;
@@ -446,6 +448,8 @@ const GlobalStyle = createGlobalStyle`
   ${TransitionStyles};
 
   ${PrismStyles};
+
+  ${VennDiagramStyles};
 `;
 
 export default GlobalStyle;

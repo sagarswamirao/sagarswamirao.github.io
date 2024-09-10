@@ -120,25 +120,24 @@ const Hero = () => {
 
   const one = <h1>Hello there, it's great to meet you! 👋</h1>;
   const two = <h2 className="big-heading">I'm Sagar Swami Rao Kulkarni</h2>;
-  const three = <h3 className="medium-heading">AI Full-Stack Developer</h3>;
+  const three = <h3 className="medium-heading">Software Engineer</h3>;
   const four = (
     <div className="imageAdjust">
       <div className="imageAdjust1">
         <p style={paragraphStyle}>
-          As a Master's student in Computer Science at the University of Colorado Boulder 🎓, I have
-          a knack for bringing innovative ideas to life. My professional journey at Quinnox in
-          Bangalore has been an exhilarating ride. From leading the charge on the groundbreaking
-          QInfinite project to driving cutting-edge initiatives for Martin Brower, I've sharpened my
-          skills in optimizing complex APIs, building robust full-stack applications, pioneering
-          innovative object detection models, and significantly enhancing operational efficiency.
+          As a Master's student in Computer Science at the University of Colorado Boulder🎓, I have
+          a solid foundation in software engineering and a passion for developing impactful
+          solutions. My professional journey at Quinnox in Bengaluru has allowed me to work on
+          optimizing REST APIs, reducing compute time by 50%, building an automatic payment tracker
+          using AWS Lambda, and developing an object detection POC with 76% accuracy, which earned
+          me the 2022 On-the-Spot Award.
         </p>
         <p style={paragraphStyle}>
-          With an insatiable thirst for knowledge and a drive to push boundaries, I'm actively
-          seeking exciting co-op and full-time opportunities starting May 2025. I'm open to roles
-          that allow me to contribute my expertise while continuing to learn and grow. I bring a
-          dynamic skill set and a genuine passion for creating impactful solutions to the table.
-          Let's explore how we can collaborate and create something truly extraordinary together!
-          🌟✨
+          With a constant drive for learning and innovation, I am actively seeking a co-op
+          opportunity for the Spring semester and full-time roles starting in May 2025. I'm eager to
+          contribute my skills in Java, Python, React, and AWS while continuing to grow
+          professionally. Let's connect and explore how we can collaborate on creating impactful and
+          innovative solutions together! 🌟✨
         </p>
       </div>
       <StyledPic>
@@ -155,6 +154,7 @@ const Hero = () => {
       </StyledPic>
     </div>
   );
+
   const five = (
     <a
       className="email-link"

@@ -1,16 +1,16 @@
 import React, { useEffect, useRef } from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import VennDiagramComponent from './venndiagramcomponent';
 
 const paragraphStyle = {
   textAlign: 'justify',
 };
 
 const StyledAboutSection = styled.section`
-  max-width: 900px;
+  max-width: 800px;
 
   .inner {
     display: grid;
@@ -117,7 +117,7 @@ const StyledPic = styled.div`
   }
 `;
 
-const About = () => {
+const ValueIBring = () => {
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
@@ -132,44 +132,44 @@ const About = () => {
   const skills = [
     'Java',
     'Python',
+    'JavaScript',
     'React.js',
-    'SpringBoot',
     'MySQL',
     'MongoDB',
     'Neo4J',
     'Redis',
-    'HTML',
-    'JavaScript',
-    'AWS',
-    'Docker',
+    'Popoto.js',
+    'Three.js',
   ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
-      <h2 className="numbered-heading">About Me</h2>
+      <h2 className="numbered-heading">Value I Bring</h2>
       <div className="inner">
         <StyledText>
           <div>
             <p style={paragraphStyle}>
-              Hello! I'm Sagar Swami Rao Kulkarni, a Software Engineer with 2.5 years of experience.
-              Currently pursuing my Master's in Computer Science at the University of Colorado,
-              Boulder, I bring a strong foundation in Computer Science and Engineering, having
-              graduated with a <span style={{ color: '#FFD700' }}>Gold Medal</span> from CMR
-              University, India.
+              Hello! I'm Sagar Swami Rao Kulkarni, a Software Engineer with a passion for
+              cutting-edge technology. Currently pursuing my Master's in Computer Science (with a
+              minor in Artifical Intelligence) at the University of Colorado, Boulder, I bring a
+              solid foundation in Computer Science and Engineering, along with the prestigious{' '}
+              <span style={{ color: '#FFD700' }}>Gold Medal</span> from CMR University in India.
             </p>
             <p style={paragraphStyle}>
-              My professional experience at Quinnox involved optimizing REST APIs, reducing compute
-              time by 50%, automating data processes, and developing an object detection POC with
-              76% accuracy, which earned me the 2022 On-the-Spot Award. Additionally, I built an
-              automatic payment tracker using AWS Lambda, Stripe, and Springboot to streamline
-              billing operations.
+              My professional journey at Quinnox in Bengaluru was exhilarating, where I worked on
+              groundbreaking projects like QInfinite and Martin Brower-Perfect Order. I optimized
+              APIs, reducing compute time by 80%, and achieved an impressive 76% detection accuracy
+              through innovative object detection models. I thrive in collaborative environments,
+              setting high standards and ensuring smooth project execution, as recognized by the
+              2022 On the Spot Award, 2021 Pat on the Back Award, and the Zonal Level title at the
+              Azure Skynet Hackathon.
             </p>
             <p style={paragraphStyle}>
-              I am passionate about building scalable applications and have contributed to
-              open-source projects like <strong>react-ui-dropzone</strong>, which has achieved an
-              average of 37 weekly downloads on NPM. I'm constantly seeking new challenges, whether
-              it's working on innovative tech solutions or volunteering for community-driven
-              initiatives.
+              Driven by innovation, I actively seek new challenges to push boundaries. From
+              exploring cutting-edge tech to participating in volunteering initiatives, I'm always
+              eager to contribute and create a positive impact. Beyond coding, I'm on a perpetual
+              quest for knowledge and personal growth, with a strong commitment to giving back to
+              the community.
             </p>
             <p style={paragraphStyle}>
               Here are some of the technologies I've been working with recently:
@@ -180,20 +180,11 @@ const About = () => {
           </ul>
         </StyledText>
         <StyledPic>
-          <div className="wrapper">
-            <StaticImage
-              className="img"
-              src="../../images/me.jpg"
-              width={500}
-              quality={95}
-              formats={['AUTO', 'WEBP', 'AVIF']}
-              alt="Headshot"
-            />
-          </div>
+          <VennDiagramComponent width={300} height={300} />
         </StyledPic>
       </div>
     </StyledAboutSection>
   );
 };
 
-export default About;
+export default ValueIBring;

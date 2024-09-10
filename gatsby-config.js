@@ -5,9 +5,23 @@ module.exports = {
   siteMetadata: {
     title: 'Sagar Swami Rao Kulkarni',
     description:
-      'Sagar Swami Rao Kulkarni is an AI FullStack Developer who specializes in building exceptional web applications and object detection models',
+      'Sagar Swami Rao Kulkarni is a Software Engineer who specializes in building exceptional web applications and object detection models',
     siteUrl: 'https://sagarswamirao.github.io', // No trailing slash allowed!
-    image: '/og.png', // Path to your image you placed in the 'static' folder
+    image: '/og.jpg', // Path to your image you placed in the 'static' folder
+    keywords: [
+      'Sagar Swami Rao Kulkarni',
+      'University of Colorado Boulder',
+      'CU Boulder',
+      'Gold Medalist @ CMR University',
+      'Gatsby',
+      'React',
+      'SWE',
+      'Gen AI',
+      'AI',
+      'Developer',
+      'Backend',
+      'Frontend',
+    ],
     twitterUsername: '@SagarSwamiRao',
   },
   plugins: [

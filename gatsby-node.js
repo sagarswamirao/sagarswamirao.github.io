@@ -105,3 +105,42 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
     },
   });
 };
+
+exports.onCreateNode = ({ node, actions }) => {
+  const { createNodeField } = actions;
+  if (node.internal.type === 'MarkdownRemark') {
+    const slug = path.basename(node.fileAbsolutePath, '.md');
+    createNodeField({
+      node,
+      name: 'slug',
+      value: slug,
+    });
+    // Add SEO metadata fields here
+    const seoDescription =
+      'Sagar Swami Rao Kulkarni is a Software Engineer who specializes in building exceptional web applications and object detection models';
+    const seoKeywords = [
+      'Sagar Swami Rao Kulkarni',
+      'University of Colorado Boulder',
+      'CU Boulder',
+      'Gold Medalist @ CMR University',
+      'Gatsby',
+      'React',
+      'SWE',
+      'Gen AI',
+      'AI',
+      'Developer',
+      'Backend',
+      'Frontend',
+    ];
+    createNodeField({
+      node,
+      name: 'seoDescription',
+      value: seoDescription,
+    });
+    createNodeField({
+      node,
+      name: 'seoKeywords',
+      value: seoKeywords,
+    });
+  }
+};
