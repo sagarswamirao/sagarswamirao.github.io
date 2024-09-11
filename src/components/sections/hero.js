@@ -129,7 +129,7 @@ const Hero = () => {
           a solid foundation in software engineering and a passion for developing impactful
           solutions. My professional journey at Quinnox in Bengaluru has allowed me to work on
           optimizing REST APIs, reducing compute time by 50%, building an automatic payment tracker
-          using AWS Lambda, and developing an object detection POC with 76% accuracy, which earned
+          using AWS Lambda, and developing an object detection POC with 86% accuracy, which earned
           me the 2022 On-the-Spot Award.
         </p>
         <p style={paragraphStyle}>

@@ -160,7 +160,7 @@ const About = () => {
             <p style={paragraphStyle}>
               My professional experience at Quinnox involved optimizing REST APIs, reducing compute
               time by 50%, automating data processes, and developing an object detection POC with
-              76% accuracy, which earned me the 2022 On-the-Spot Award. Additionally, I built an
+              86% accuracy, which earned me the 2022 On-the-Spot Award. Additionally, I built an
               automatic payment tracker using AWS Lambda, Stripe, and Springboot to streamline
               billing operations.
             </p>

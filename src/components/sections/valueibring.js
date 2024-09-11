@@ -158,7 +158,7 @@ const ValueIBring = () => {
             <p style={paragraphStyle}>
               My professional journey at Quinnox in Bengaluru was exhilarating, where I worked on
               groundbreaking projects like QInfinite and Martin Brower-Perfect Order. I optimized
-              APIs, reducing compute time by 80%, and achieved an impressive 76% detection accuracy
+              APIs, reducing compute time by 80%, and achieved an impressive 86% detection accuracy
               through innovative object detection models. I thrive in collaborative environments,
               setting high standards and ensuring smooth project execution, as recognized by the
               2022 On the Spot Award, 2021 Pat on the Back Award, and the Zonal Level title at the
