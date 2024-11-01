@@ -130,18 +130,34 @@ const About = () => {
   }, []);
 
   const skills = [
-    'Java',
     'Python',
+    'Java',
+    'Flask',
+    'Pandas',
+    'Amplitude',
     'React.js',
+    'JavaScript',
+    'HTML',
+    'PL/SQL',
     'SpringBoot',
     'MySQL',
-    'MongoDB',
     'Neo4J',
+    'Oracle APEX',
     'Redis',
-    'HTML',
-    'JavaScript',
     'AWS',
     'Docker',
+    'Git',
+    'Jupyter',
+    'JUnit',
+    'Mockito',
+    'Pytest',
+    'Unittest',
+    'Postman',
+    'Tomcat',
+    'React.js',
+    'AWS Cloud Practitioner',
+    'CodePath Certificate in TIP',
+    'LetsUpgrade Java Programming & Python Essentials',
   ];
 
   return (

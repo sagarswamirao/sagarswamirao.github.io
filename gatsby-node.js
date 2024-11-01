@@ -117,7 +117,7 @@ exports.onCreateNode = ({ node, actions }) => {
     });
     // Add SEO metadata fields here
     const seoDescription =
-      'Sagar Swami Rao Kulkarni is a Software Engineer who specializes in building exceptional web applications and object detection models';
+      'Sagar Swami Rao Kulkarni is a Software Engineer who specializes in building exceptional web applications and AI models';
     const seoKeywords = [
       'Sagar Swami Rao Kulkarni',
       'University of Colorado Boulder',
@@ -126,6 +126,10 @@ exports.onCreateNode = ({ node, actions }) => {
       'Gatsby',
       'React',
       'SWE',
+      'Software Engineer',
+      'Software Development Engineer',
+      'SDE',
+      'Backend Developer',
       'Gen AI',
       'AI',
       'Developer',
