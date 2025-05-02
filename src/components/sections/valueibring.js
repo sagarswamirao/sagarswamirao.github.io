@@ -130,34 +130,45 @@ const ValueIBring = () => {
   }, []);
 
   const skills = [
+    // Programming Languages
     'Python',
     'Java',
-    'Flask',
-    'Pandas',
-    'Amplitude',
-    'React.js',
     'JavaScript',
     'HTML',
-    'PL/SQL',
-    'SpringBoot',
+
+    // Frontend
+    'React.js',
+
+    // Backend / Frameworks
+    'Spring Boot',
+    'Flask',
+    'Pandas',
+
+    // Databases
     'MySQL',
     'Neo4J',
-    'Oracle APEX',
     'Redis',
+
+    // Cloud & DevOps
     'AWS',
     'Docker',
     'Git',
-    'Jupyter',
+
+    // Testing
     'JUnit',
     'Mockito',
     'Pytest',
     'Unittest',
+
+    // Tools
     'Postman',
-    'Tomcat',
-    'React.js',
+    'Jupyter',
+
+    // Certifications
     'AWS Cloud Practitioner',
-    'CodePath Certificate in TIP',
-    'LetsUpgrade Java Programming & Python Essentials',
+    'AWS AI Practitioner',
+    'CodePath - Intermediate Web Development',
+    'CodePath - Certificate in TIP',
   ];
 
   return (

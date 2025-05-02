@@ -135,7 +135,6 @@ const About = () => {
     'Java',
     'JavaScript',
     'HTML',
-    'PL/SQL',
 
     // Frontend
     'React.js',
@@ -168,7 +167,8 @@ const About = () => {
     // Certifications
     'AWS Cloud Practitioner',
     'AWS AI Practitioner',
-    'CodePath Certificate in TIP',
+    'CodePath - Intermediate Web Development',
+    'CodePath - Certificate in TIP',
   ];
 
   return (
