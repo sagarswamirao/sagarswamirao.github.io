@@ -125,19 +125,24 @@ const Hero = () => {
     <div className="imageAdjust">
       <div className="imageAdjust1">
         <p style={paragraphStyle}>
-          As a Master's student in Computer Science at the University of Colorado Boulder🎓, I have
-          a solid foundation in software engineering and a passion for developing impactful
-          solutions. My professional journey at Quinnox in Bengaluru has allowed me to work on
-          optimizing REST APIs, reducing compute time by 50%, building an automatic payment tracker
-          using AWS Lambda, and developing an object detection POC with 86% accuracy, which earned
-          me the 2022 On-the-Spot Award.
+          I'm a Master's student in Computer Science at the University of Colorado Boulder🎓 with a
+          strong foundation in software engineering and a passion for building impactful solutions.
+          At Quinnox, I optimized REST APIs, cut compute time by 50%, built an AWS Lambda–based
+          payment tracker, and developed an object detection POC with 86% accuracy, earning the 2022
+          On-the-Spot Award.
         </p>
         <p style={paragraphStyle}>
-          With a constant drive for learning and innovation, I am actively seeking a co-op
-          opportunity for the Spring semester and full-time roles starting in May 2025. I'm eager to
-          contribute my skills in Java, Python, React, and AWS while continuing to grow
-          professionally. Let's connect and explore how we can collaborate on creating impactful and
-          innovative solutions together! 🌟✨
+          I recently led development of an AI-powered document extraction platform for Alliant
+          National, which placed 2nd out of 142 teams and received the Excellence in Design award at
+          the CU Engineering Projects Expo.
+        </p>
+        <p style={paragraphStyle}>
+          I'm AWS AI Practitioner and Cloud Practitioner certified, with hands-on experience using
+          services like Lambda, S3, SQS, and RDS in production environments.
+        </p>
+        <p style={paragraphStyle}>
+          I'm currently seeking full-time roles starting May 2025, where I can apply my skills in
+          Java, Python, React, and AWS. Let's connect and create something meaningful! 🌟
         </p>
       </div>
       <StyledPic>

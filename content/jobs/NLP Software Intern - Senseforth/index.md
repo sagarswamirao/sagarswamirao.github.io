@@ -7,6 +7,6 @@ range: 'Mar 2020 - May 2020'
 url: 'https://www.senseforth.ai/'
 ---
 
-- Constructed scalable document parsers for PDFs, PPTs, and Word documents using NLP techniques, extending the capabilities of the KnowledgeBot parser.
-- Augmented document parsing with Lucene indexing, Bird's Eye Search, and word spaces calculations.
+- Ideated and developed Java-based NLP parsers, improving KnowledgeBot’s accuracy by 15% across multiple file formats.
+- Enhanced document indexing with Lucene and Bird’s Eye Search in Python, boosting search performance and speed.
 - Modified the open-source code of PDFBox to retrieve font information, indentations, and distances within PDF documents.

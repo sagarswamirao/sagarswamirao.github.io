@@ -25,7 +25,7 @@ const StyledAboutSection = styled.section`
 const StyledText = styled.div`
   ul.skills-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-template-columns: repeat(3, minmax(140px, 200px));
     grid-gap: 0 10px;
     padding: 0;
     margin: 20px 0 0 0;
@@ -130,34 +130,45 @@ const About = () => {
   }, []);
 
   const skills = [
+    // Programming Languages
     'Python',
     'Java',
-    'Flask',
-    'Pandas',
-    'Amplitude',
-    'React.js',
     'JavaScript',
     'HTML',
     'PL/SQL',
-    'SpringBoot',
+
+    // Frontend
+    'React.js',
+
+    // Backend / Frameworks
+    'Spring Boot',
+    'Flask',
+    'Pandas',
+
+    // Databases
     'MySQL',
     'Neo4J',
-    'Oracle APEX',
     'Redis',
+
+    // Cloud & DevOps
     'AWS',
     'Docker',
     'Git',
-    'Jupyter',
+
+    // Testing
     'JUnit',
     'Mockito',
     'Pytest',
     'Unittest',
+
+    // Tools
     'Postman',
-    'Tomcat',
-    'React.js',
+    'Jupyter',
+
+    // Certifications
     'AWS Cloud Practitioner',
+    'AWS AI Practitioner',
     'CodePath Certificate in TIP',
-    'LetsUpgrade Java Programming & Python Essentials',
   ];
 
   return (
@@ -167,25 +178,35 @@ const About = () => {
         <StyledText>
           <div>
             <p style={paragraphStyle}>
-              Hello! I'm Sagar Swami Rao Kulkarni, a Software Engineer with 2.5 years of experience.
-              Currently pursuing my Master's in Computer Science at the University of Colorado,
-              Boulder, I bring a strong foundation in Computer Science and Engineering, having
-              graduated with a <span style={{ color: '#FFD700' }}>Gold Medal</span> from CMR
-              University, India.
+              I'm Sagar Swami Rao Kulkarni, a full-stack software engineer with 2.5 years of
+              experience and a strong academic background. I'm currently pursuing a Master’s in
+              Computer Science at the University of Colorado Boulder, building on my undergraduate
+              foundation where I graduated with a{' '}
+              <span style={{ color: '#FFD700' }}>Gold Medal</span> from CMR University, India.
             </p>
+
             <p style={paragraphStyle}>
-              My professional experience at Quinnox involved optimizing REST APIs, reducing compute
-              time by 50%, automating data processes, and developing an object detection POC with
-              86% accuracy, which earned me the 2022 On-the-Spot Award. Additionally, I built an
-              automatic payment tracker using AWS Lambda, Stripe, and Springboot to streamline
-              billing operations.
+              My professional journey at Quinnox included backend optimization, infrastructure
+              automation, and applied AI. I helped reduce compute time by 50% through REST API
+              performance tuning, built a serverless payment tracker with AWS Lambda and Stripe, and
+              created an object detection POC that achieved 86% accuracy — earning me the 2022
+              On-the-Spot Award.
             </p>
+
             <p style={paragraphStyle}>
-              I am passionate about building scalable applications and have contributed to
-              open-source projects like <strong>react-ui-dropzone</strong>, which has achieved an
-              average of 37 weekly downloads on NPM. I'm constantly seeking new challenges, whether
-              it's working on innovative tech solutions or volunteering for community-driven
-              initiatives.
+              One of my most rewarding projects was leading the development of an AI-powered
+              document extraction platform for Alliant National, which earned{' '}
+              <strong>2nd place out of 142 teams</strong> and won the{' '}
+              <strong>Excellence in Design award</strong> at the CU Engineering Projects Expo. I'm
+              also AWS AI Practitioner and Cloud Practitioner certified, with real-world experience
+              across Lambda, S3, SQS, RDS, and more.
+            </p>
+
+            <p style={paragraphStyle}>
+              Outside of work, I contribute to open-source, including{' '}
+              <strong>react-ui-dropzone</strong>, a library with steady adoption on NPM. I'm
+              passionate about scalable architecture, clean code, and building products that solve
+              real problems — and I'm always excited to collaborate on impactful ideas.
             </p>
             <p style={paragraphStyle}>
               Here are some of the technologies I've been working with recently:
